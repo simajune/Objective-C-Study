@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  180608VariableConstant
+//  180608Int
 //
 //  Created by SIMA on 2018. 6. 8..
 //  Copyright © 2018년 devtejay. All rights reserved.
@@ -16,27 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    int1 = 100;
+    int2 = 10124;
     
-    NSString *word1 = @"Hello";
-    NSString *const word2 = @"Goodbye";
+    int score = int1 + int2;
     
-    int a = 10;
-    const int b = 50;
-    
-    int const c = 20;
-    
-    NSLog(word1);
-    
-//    a = 15;
-//    b = 1;
-//    c = 2;
-//
-//
-//    word1 = @"123";
-//
-//    word2 = @"456";
-    
-    
+    self.label.text = [NSString stringWithFormat: @"%d", score];
     
 }
 

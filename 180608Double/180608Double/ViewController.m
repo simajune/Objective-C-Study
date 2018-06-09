@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  180608VariableConstant
+//  180608Double
 //
 //  Created by SIMA on 2018. 6. 8..
 //  Copyright © 2018년 devtejay. All rights reserved.
@@ -16,28 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    double1 = 100.343;
+    double2 = 234.123;
     
-    NSString *word1 = @"Hello";
-    NSString *const word2 = @"Goodbye";
+    double score = double1 + double2;
     
-    int a = 10;
-    const int b = 50;
-    
-    int const c = 20;
-    
-    NSLog(word1);
-    
-//    a = 15;
-//    b = 1;
-//    c = 2;
-//
-//
-//    word1 = @"123";
-//
-//    word2 = @"456";
-    
-    
-    
+    self.label.text = [NSString stringWithFormat: @"%.2f", score];
 }
 
 
