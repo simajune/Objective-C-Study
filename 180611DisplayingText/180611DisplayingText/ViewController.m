@@ -28,7 +28,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (IBAction)txtAction:(id)sender {
     self.label.text = self.txtField.text;
     [self resignFirstResponder];
@@ -74,7 +73,6 @@
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
-    
     if ([text rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet]].location == NSNotFound) {
         return YES;
     }
