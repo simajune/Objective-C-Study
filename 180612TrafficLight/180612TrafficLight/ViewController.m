@@ -39,7 +39,7 @@
     if (timerInt == 0) {
         scoreInt = 0;
         timerInt = 3;
-        [self.button setTitle:@"Start" forState:UIControlStateNormal];
+        [self.button setTitle:@"Restart" forState:UIControlStateNormal];
     }
 }
     
