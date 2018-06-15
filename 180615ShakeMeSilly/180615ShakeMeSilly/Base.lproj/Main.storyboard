@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="edosz.ttf">
+            <string>EdoSZ</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="biZ-J2-Eds">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-tG-iX2">
+                                <rect key="frame" x="18.5" y="50" width="337.5" height="133"/>
+                                <string key="text">Shake Me 
+Silly</string>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0R-Nk-s8O">
+                                <rect key="frame" x="18.5" y="200" width="337.5" height="67"/>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OX3-2A-Meb">
+                                <rect key="frame" x="18.5" y="467" width="337.5" height="67"/>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYC-t7-Mh3">
+                                <rect key="frame" x="18.5" y="567" width="337.5" height="67"/>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="29"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYT-Z1-ywg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maracas1" translatesAutoresizingMaskIntoConstraints="NO" id="1bL-ej-wsZ">
+                                <rect key="frame" x="94.5" y="273" width="187.5" height="187.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1bL-ej-wsZ" secondAttribute="height" multiplier="1:1" id="RVp-Oj-Uve"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lih-tG-iX2" firstAttribute="width" secondItem="biZ-J2-Eds" secondAttribute="width" multiplier="0.9" id="1XU-Q2-gtc"/>
+                            <constraint firstItem="1bL-ej-wsZ" firstAttribute="width" secondItem="biZ-J2-Eds" secondAttribute="width" multiplier="0.5" id="2Uk-74-p6C"/>
+                            <constraint firstItem="OX3-2A-Meb" firstAttribute="width" secondItem="biZ-J2-Eds" secondAttribute="width" multiplier="0.9" id="2a5-Zs-Rzz"/>
+                            <constraint firstItem="a0R-Nk-s8O" firstAttribute="height" secondItem="biZ-J2-Eds" secondAttribute="height" multiplier="0.1" id="4qD-ki-WZc"/>
+                            <constraint firstItem="1bL-ej-wsZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fo-x8-s2b"/>
+                            <constraint firstItem="OX3-2A-Meb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8fb-zZ-Z3g"/>
+                            <constraint firstItem="a0R-Nk-s8O" firstAttribute="width" secondItem="Lih-tG-iX2" secondAttribute="width" id="F9O-rh-CaD"/>
+                            <constraint firstItem="a0R-Nk-s8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FHx-ej-iMx"/>
+                            <constraint firstItem="OX3-2A-Meb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="Fif-4B-MwD"/>
+                            <constraint firstItem="1bL-ej-wsZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.1" id="FlG-sW-eLF"/>
+                            <constraint firstItem="kYC-t7-Mh3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" id="JV9-MJ-GTZ"/>
+                            <constraint firstItem="kYC-t7-Mh3" firstAttribute="width" secondItem="OX3-2A-Meb" secondAttribute="width" id="LIs-X2-FN2"/>
+                            <constraint firstItem="biZ-J2-Eds" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Loe-FE-Q9y"/>
+                            <constraint firstItem="biZ-J2-Eds" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MJJ-yf-Z7b"/>
+                            <constraint firstItem="kYC-t7-Mh3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MaC-G5-FrZ"/>
+                            <constraint firstItem="Lih-tG-iX2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRI-FT-8ZY"/>
+                            <constraint firstItem="biZ-J2-Eds" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VuQ-23-zRA"/>
+                            <constraint firstItem="a0R-Nk-s8O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="aMd-bg-pwg"/>
+                            <constraint firstItem="kYC-t7-Mh3" firstAttribute="height" secondItem="OX3-2A-Meb" secondAttribute="height" id="blk-MC-SaG"/>
+                            <constraint firstItem="Lih-tG-iX2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.35" id="c4Q-cD-qXh"/>
+                            <constraint firstItem="biZ-J2-Eds" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lbo-8n-uvM"/>
+                            <constraint firstItem="OX3-2A-Meb" firstAttribute="height" secondItem="biZ-J2-Eds" secondAttribute="height" multiplier="0.1" id="m1M-LJ-D5U"/>
+                            <constraint firstItem="Lih-tG-iX2" firstAttribute="height" secondItem="biZ-J2-Eds" secondAttribute="height" multiplier="0.2" id="oXA-Ti-HnX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="kYC-t7-Mh3" id="NyI-bN-sdo"/>
+                        <outlet property="imgView" destination="1bL-ej-wsZ" id="xqx-ko-CjQ"/>
+                        <outlet property="scoreLabel" destination="OX3-2A-Meb" id="X80-l6-efW"/>
+                        <outlet property="timeLabel" destination="a0R-Nk-s8O" id="yjC-Rf-TQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Maracas1" width="551" height="743"/>
+        <image name="beach" width="844" height="888"/>
+    </resources>
+</document>
