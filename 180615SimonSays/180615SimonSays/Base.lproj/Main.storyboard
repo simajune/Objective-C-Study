@@ -57,12 +57,14 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Says" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-Od-fE1">
                                         <rect key="frame" x="0.0" y="116" width="375" height="184.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.095943921232876705" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="OJ7-Od-fE1" firstAttribute="centerX" secondItem="fFJ-aW-irU" secondAttribute="centerX" id="9hg-rg-4SD"/>
                                     <constraint firstItem="OJ7-Od-fE1" firstAttribute="width" secondItem="fFJ-aW-irU" secondAttribute="width" id="p73-54-FXf"/>
                                     <constraint firstItem="fAC-Vu-A9t" firstAttribute="width" secondItem="fFJ-aW-irU" secondAttribute="width" id="rRs-yL-mZL"/>
                                 </constraints>
