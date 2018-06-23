@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -26,4 +27,12 @@
 }
 
 
+- (IBAction)switchView:(id)sender {
+    
+    SecondViewController *second = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
+    second.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:second animated:YES completion:nil];
+    
+    
+}
 @end

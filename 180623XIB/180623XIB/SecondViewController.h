@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  180623XIB
 //
 //  Created by SIMA on 2018. 6. 23..
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)switchView:(id)sender;
+@interface SecondViewController : UIViewController
+- (IBAction)goHomeView:(id)sender;
 
 @end
-
