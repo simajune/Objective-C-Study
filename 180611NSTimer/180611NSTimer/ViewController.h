@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface ViewController : UIViewController {
     NSTimer *timer;
@@ -17,6 +20,7 @@
 - (IBAction)startAction:(UIButton *)sender;
 - (IBAction)pauseAction:(UIButton *)sender;
 - (IBAction)restartAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *setTimeAction;
 
 @end
 

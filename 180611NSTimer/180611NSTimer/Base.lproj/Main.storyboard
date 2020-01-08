@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,10 +25,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y9d-SU-csc">
-                                <rect key="frame" x="18.5" y="216.5" width="337.5" height="133.5"/>
+                                <rect key="frame" x="19" y="233.5" width="337.5" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buh-JQ-6BC">
-                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="42.5"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,7 +38,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUB-oQ-7nF">
-                                        <rect key="frame" x="0.0" y="48" width="337.5" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="52.5" width="337.5" height="42.5"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Pause">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,13 +48,24 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-b9-6af">
-                                        <rect key="frame" x="0.0" y="95.5" width="337.5" height="38"/>
+                                        <rect key="frame" x="0.0" y="105" width="337.5" height="42.5"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Restart">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="restartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Sp-E6-INb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAJ-vu-Ea2">
+                                        <rect key="frame" x="0.0" y="157.5" width="337.5" height="42.5"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Set Time">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4j-Q8-hHb"/>
+                                            <action selector="setTimeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ow-Q6-UPz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,8 +76,8 @@
                             <constraint firstItem="0sI-IQ-cIM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="1FC-of-hfR"/>
                             <constraint firstItem="Y9d-SU-csc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2RO-P2-xrz"/>
                             <constraint firstItem="0sI-IQ-cIM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DDh-Zn-ljc"/>
-                            <constraint firstItem="Y9d-SU-csc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="Ulz-nz-LEF"/>
-                            <constraint firstItem="Y9d-SU-csc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.85" id="aSm-fm-uja"/>
+                            <constraint firstItem="Y9d-SU-csc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="Ulz-nz-LEF"/>
+                            <constraint firstItem="Y9d-SU-csc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aSm-fm-uja"/>
                             <constraint firstItem="0sI-IQ-cIM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="eW7-qm-tn7"/>
                             <constraint firstItem="Y9d-SU-csc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="nfk-HN-Gly"/>
                             <constraint firstItem="0sI-IQ-cIM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="yxW-rZ-zF3"/>
@@ -76,6 +86,8 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="0sI-IQ-cIM" id="tAe-Ul-iz1"/>
+                        <outlet property="setTimeAction" destination="jAJ-vu-Ea2" id="Pqt-0t-yyP"/>
+                        <outlet property="startButton" destination="buh-JQ-6BC" id="N6y-fD-d8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

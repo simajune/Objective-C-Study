@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232A1AE821C560D1006E7FAA /* Timer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232A1AE721C560D1006E7FAA /* Timer.mp3 */; };
+		232A1AEA21C560DF006E7FAA /* Bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232A1AE921C560DF006E7FAA /* Bomb.mp3 */; };
 		232E8DB120CE712B0012900F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E8DB020CE712B0012900F /* AppDelegate.m */; };
 		232E8DB420CE712B0012900F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E8DB320CE712B0012900F /* ViewController.m */; };
 		232E8DB720CE712B0012900F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232E8DB520CE712B0012900F /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232A1AE721C560D1006E7FAA /* Timer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Timer.mp3; sourceTree = "<group>"; };
+		232A1AE921C560DF006E7FAA /* Bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bomb.mp3; sourceTree = "<group>"; };
 		232E8DAC20CE712B0012900F /* 180611NSTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 180611NSTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		232E8DAF20CE712B0012900F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		232E8DB020CE712B0012900F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				232E8DBA20CE712C0012900F /* LaunchScreen.storyboard */,
 				232E8DBD20CE712C0012900F /* Info.plist */,
 				232E8DBE20CE712C0012900F /* main.m */,
+				232A1AE921C560DF006E7FAA /* Bomb.mp3 */,
+				232A1AE721C560D1006E7FAA /* Timer.mp3 */,
 			);
 			path = 180611NSTimer;
 			sourceTree = "<group>";
@@ -128,7 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232A1AE821C560D1006E7FAA /* Timer.mp3 in Resources */,
 				232E8DBC20CE712C0012900F /* LaunchScreen.storyboard in Resources */,
+				232A1AEA21C560DF006E7FAA /* Bomb.mp3 in Resources */,
 				232E8DB920CE712C0012900F /* Assets.xcassets in Resources */,
 				232E8DB720CE712B0012900F /* Main.storyboard in Resources */,
 			);
